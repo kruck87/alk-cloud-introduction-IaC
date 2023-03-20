@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Strona przygotowana na zaliczenie z przedmiotu Wstęp do chmury</title>
+    </head>
+    <body>
+        <p>Projekt przygotowany jako IaC. Projekt wykorzystuje ponisze elementy</p>
+        <ul>
+            <li>Utworzenie sieci VPC, wraz z subnetem</li>
+            <li>Stworzenie template do Instances group</li>
+            <li>W ramach template'u skrypt startowy instalujący apache, tworzący pomocniczne pliki html</li>
+            <li>Główny plik - index.html pobierany jest z bucketu</li>
+            <li>Utworzono VM jako MIG - na podstawie template. Zastosowano autoscaling i health check</li>
+            <li>Skonfigurowano publiczne uprawnienia bucketów i obiektów</li>
+            <li>Utworzenie Loadbalancera (1 front, Backendy: MIG oraz bucket) - mozna sprawdzić wchodząc kilkukrotnie w <a href = "which.html">link</a></li>
+            <li>Utworzenie URL Map</li>
+            <li>Utworzenie bucketu przechowującego media statyczne (obrazki itp)</li>
+            <li>Zarezerwowanie statycznego IP dla Load Balancera</li>
+            <li>Bucket z mediami cachowany jest za pomocą Cloud CDN - wszystkie pliki dostępne po ściezce /src są cacheowane</li>
+            <li>Skonfigrowano NAT</li>
+        </ul>
+        <img src="/src/1.jpeg"></img>
+        <img src="/src/2.jpg"></img>
+        <img src="/src/3.jpeg"></img>
+        <img src="/src/4.jpeg"></img>
+    </body>
+</html>
